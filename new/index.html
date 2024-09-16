@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ahmed Adel Rasmy's CV</title>
+    <title>Ahmed Aziz's Resume</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -32,38 +32,53 @@
         }
         .profile img {
             border-radius: 50%;
-            width: 150px;
+            width: 100px;
         }
-        .section-title {
-            border-bottom: 2px solid #333;
-            padding-bottom: 5px;
+        .profile h1 {
+            font-size: 24px;
         }
-        .skills, .work-experience {
-            display: flex;
-            justify-content: space-between;
-        }
-        .work-experience .job-details, .skills .skill-set {
-            width: 45%;
+        .profile h2 {
+            font-size: 20px;
+            color: gray;
         }
         .contact-info {
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
+            gap: 30px;
             margin-bottom: 20px;
         }
         .contact-info div {
-            width: 30%;
+            text-align: center;
         }
-        a {
-            color: #0077cc;
-            text-decoration: none;
+        .section-title {
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .work-experience, .skills {
+            margin-bottom: 20px;
+        }
+        .job-details h3, .job-details p {
+            margin: 5px 0;
+        }
+        .skills ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .skills ul li {
+            background: #f0f0f0;
+            padding: 5px;
+            margin-bottom: 5px;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="profile">
-            <img src="/home/ahmed/AhmedAdel7472.github.io/new/pictures/1686986731863.jpeg" alt="Profile Picture">
-            <h1>Ahmed Adel Rasmy Hamad</h1>
+            <img src="https://github.com/your-profile-picture.jpg" alt="Profile Picture">
+            <h1>Ahmed Aziz</h1>
+            <h2>Data Engineer</h2>
+            <p><a href="https://github.com/AhmedAziz">View My GitHub Profile</a></p>
         </div>
 
         <div class="contact-info">
@@ -79,58 +94,34 @@
         </div>
 
         <div class="section">
-            <h2 class="section-title">Profile</h2>
-            <p>A Data Scientist and Machine Learning Engineer actively engaged in tech communities, fostering collaboration and innovation.</p>
-        </div>
-
-        <div class="section">
-            <h2 class="section-title">Professional Experience</h2>
+            <h2 class="section-title">Work Experience</h2>
             <div class="work-experience">
                 <div class="job-details">
-                    <h3>Digital Egypt Pioneers Initiative</h3>
-                    <p>IBM Data Science Scholarship | Cairo, Egypt | 06/2024 – 09/2024</p>
-                    <p>This 6 months scholarship covered diverse topics in Data Science & Machine Learning.</p>
-                </div>
-                <div class="job-details">
-                    <h3>xWARE Integrated Solutions</h3>
-                    <p>Backend Bootcamp | Assiut, Egypt | 07/2024 – 08/2024</p>
-                    <p>Gained proficiency in backend technologies and methodologies for scalable application development.</p>
+                    <h3>Data Engineer @ Confidential</h3>
+                    <p>August 2022 - Present</p>
+                    <p>• Analyzed and organized raw data</p>
+                    <p>• Built data systems and pipelines</p>
                 </div>
             </div>
         </div>
 
         <div class="section">
-            <h2 class="section-title">Education</h2>
-            <p><strong>BS Computer Science & Artificial Intelligence</strong></p>
-            <p>Assiut National University, Egypt | GPA: 3.38 (Very Good) | Expected 07/2026</p>
-        </div>
-
-        <div class="section">
-            <h2 class="section-title">Projects</h2>
-            <p><strong>Scrape IMDB movie ratings and details</strong></p>
-            <p>Developed a Python script to scrape movie ratings and store data in CSV/JSON for analysis.</p>
+            <h2 class="section-title">Certificates</h2>
+            <p><strong>Advanced Data Analysis Nanodegree - Udacity</strong></p>
+            <p>Gained experience in Python, SQL, Tableau, and data analysis.</p>
+            <p><strong>Data Visualization in Tableau - Cartona Academy</strong></p>
+            <p>Learned data visualization from experts in the food industry.</p>
         </div>
 
         <div class="section">
             <h2 class="section-title">Skills</h2>
             <div class="skills">
-                <div class="skill-set">
-                    <p><strong>Technical Skills:</strong></p>
-                    <ul>
-                        <li>Python</li>
-                        <li>SQL</li>
-                        <li>Tableau</li>
-                        <li>PowerBI</li>
-                    </ul>
-                </div>
-                <div class="skill-set">
-                    <p><strong>Tools:</strong></p>
-                    <ul>
-                        <li>Git & GitHub</li>
-                        <li>Jupyter Notebooks</li>
-                        <li>Data Visualization</li>
-                    </ul>
-                </div>
+                <ul>
+                    <li>Python</li>
+                    <li>SQL</li>
+                    <li>Tableau</li>
+                    <li>PowerBI</li>
+                </ul>
             </div>
         </div>
     </div>
