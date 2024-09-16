@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,10 +8,15 @@
         body {
             font-family: Arial, sans-serif;
             margin: 20px;
+            background-color: #f4f4f9;
         }
         .container {
             max-width: 800px;
             margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         h1, h2 {
             color: #333;
@@ -22,42 +27,111 @@
         .section {
             margin-bottom: 30px;
         }
+        .profile {
+            text-align: center;
+        }
+        .profile img {
+            border-radius: 50%;
+            width: 150px;
+        }
+        .section-title {
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
+        }
+        .skills, .work-experience {
+            display: flex;
+            justify-content: space-between;
+        }
+        .work-experience .job-details, .skills .skill-set {
+            width: 45%;
+        }
+        .contact-info {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+        .contact-info div {
+            width: 30%;
+        }
+        a {
+            color: #0077cc;
+            text-decoration: none;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Ahmed Adel Rasmy Hamad</h1>
-        <p><strong>Email:</strong> <a href="mailto:ahmed.adel201864@gmail.com">ahmed.adel201864@gmail.com</a></p>
-        <p><strong>Phone:</strong> +201098379012</p>
-        <p><strong>Location:</strong> Assiut, Egypt</p>
+        <div class="profile">
+            <img src="y/home/ahmed/AhmedAdel7472.github.io/pictures/1686986731863.jpeg" alt="Profile Picture">
+            <h1>Ahmed Adel Rasmy Hamad</h1>
+        </div>
 
-        <div class="section">
-            <h2>Profile</h2>
-            <p>A Data scientist and Machine Learning Engineer actively engaged in tech communities, fostering collaboration and innovation.</p>
+        <div class="contact-info">
+            <div>
+                <p><strong>Email:</strong> <a href="mailto:ahmed.adel201864@gmail.com">ahmed.adel201864@gmail.com</a></p>
+            </div>
+            <div>
+                <p><strong>Phone:</strong> +201098379012</p>
+            </div>
+            <div>
+                <p><strong>Location:</strong> Assiut, Egypt</p>
+            </div>
         </div>
 
         <div class="section">
-            <h2>Professional Experience</h2>
-            <h3>Digital Egypt Pioneers Initiative, IBM Data Science Scholarship</h3>
-            <p>06/2024 – 09/2024 | Cairo, Egypt</p>
-            <p>This 6 months scholarship covered diverse topics in Data Science & Machine Learning, emphasizing personal growth and freelancing skills.</p>
-
-            <h3>xWARE Integrated Solutions, Backend Boot Camp</h3>
-            <p>07/2024 – 08/2024 | Assiut, Egypt</p>
-            <p>Gained proficiency in backend technologies and methodologies for scalable application development.</p>
+            <h2 class="section-title">Profile</h2>
+            <p>A Data Scientist and Machine Learning Engineer actively engaged in tech communities, fostering collaboration and innovation.</p>
         </div>
 
         <div class="section">
-            <h2>Education</h2>
-            <h3>BS Computer Science & Artificial Intelligence</h3>
-            <p>07/2026 | Assiut National University, Egypt</p>
-            <p>GPA: 3.38 (Very Good)</p>
+            <h2 class="section-title">Professional Experience</h2>
+            <div class="work-experience">
+                <div class="job-details">
+                    <h3>Digital Egypt Pioneers Initiative</h3>
+                    <p>IBM Data Science Scholarship | Cairo, Egypt | 06/2024 – 09/2024</p>
+                    <p>This 6 months scholarship covered diverse topics in Data Science & Machine Learning.</p>
+                </div>
+                <div class="job-details">
+                    <h3>xWARE Integrated Solutions</h3>
+                    <p>Backend Bootcamp | Assiut, Egypt | 07/2024 – 08/2024</p>
+                    <p>Gained proficiency in backend technologies and methodologies for scalable application development.</p>
+                </div>
+            </div>
         </div>
 
         <div class="section">
-            <h2>Projects</h2>
-            <h3>Scrape IMDB movie ratings and details</h3>
+            <h2 class="section-title">Education</h2>
+            <p><strong>BS Computer Science & Artificial Intelligence</strong></p>
+            <p>Assiut National University, Egypt | GPA: 3.38 (Very Good) | Expected 07/2026</p>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Projects</h2>
+            <p><strong>Scrape IMDB movie ratings and details</strong></p>
             <p>Developed a Python script to scrape movie ratings and store data in CSV/JSON for analysis.</p>
+        </div>
+
+        <div class="section">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills">
+                <div class="skill-set">
+                    <p><strong>Technical Skills:</strong></p>
+                    <ul>
+                        <li>Python</li>
+                        <li>SQL</li>
+                        <li>Tableau</li>
+                        <li>PowerBI</li>
+                    </ul>
+                </div>
+                <div class="skill-set">
+                    <p><strong>Tools:</strong></p>
+                    <ul>
+                        <li>Git & GitHub</li>
+                        <li>Jupyter Notebooks</li>
+                        <li>Data Visualization</li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
 </body>
